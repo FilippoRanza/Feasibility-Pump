@@ -2,23 +2,16 @@
 
 [![Build Status](https://travis-ci.com/FilippoRanza/Feasibility-Pump.svg?branch=master)](https://travis-ci.com/FilippoRanza/Feasibility-Pump)
 
-Feasibility Pump - find feasible solution for a Binary Integer Programming
+Feasibility Pump - find feasible solution for a Binary Programming
 problem. 
 
 ## Rationale
 
-The Feasibility Pump is heuristic usefull to find a feasible solution 
-to Mixed Integer Programming problem.
-
-This implementation is specifically designed to work with Binary Programming problems, defined as:
-
-<img src="https://latex.codecogs.com/svg.latex?
-\begin{align*}
-    &\min c^t x \\
-    \text{subject to}\\
-    &Ax \geq b\\
-    &x_i \in \{0, 1\}
-\end{align*}" title="01MIP" />
+The Feasibility Pump(FP) is a heuristic usefull to find a feasible solution 
+to Mixed Integer Programming problem. This implementation is specifically designed to work with Binary Programming problems. FP is not defigned to 
+find optimal solution nor a good one, it's only purpose is to find
+a  feasible solution in a small amount of time, even for those problem 
+where a greedy algorithm cannot produce feasible result.  
 
 For a more detailed explentation please read [the article](http://www.dei.unipd.it/~fisch/papers/feasibility_pump.pdf)
 
