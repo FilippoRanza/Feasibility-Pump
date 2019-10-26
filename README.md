@@ -13,7 +13,7 @@ find optimal solution nor a good one, it's only purpose is to find
 a  feasible solution in a small amount of time, even for those problem 
 where a greedy algorithm cannot produce feasible result.  
 
-For a more detailed explanation please read [the article](http://www.dei.unipd.it/~fisch/papers/feasibility_pump.pdf)
+For a more detailed explanation please read [the original paper](http://www.dei.unipd.it/~fisch/papers/feasibility_pump.pdf)
 
 ## Usage
 this project can be use as a stand alone application or
