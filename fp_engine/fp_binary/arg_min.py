@@ -27,8 +27,12 @@ def build_constr(A, b):
 def base_sol(c, A, b):
     bounds = [(0, 1)] * len(c)
     res = optimize.linprog(c, A_ub=A, b_ub=b, bounds=bounds)
-    x = fp_round(res.x)
-    return x
+    if res.success:
+        x = fp_round(res.x)
+        out = x, True
+    else:
+        out = None, False
+    return out
 
 
 def arg_min(rx, constr):

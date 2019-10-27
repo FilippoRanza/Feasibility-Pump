@@ -24,7 +24,10 @@ def update_round(sol, int_sol):
 
 
 def feasibility_pump(c, A, b):
-    rx = base_sol(c, A, b)
+    rx, stat = base_sol(c, A, b)
+    if not stat:
+        return None, False
+        
     constr = build_constr(A, b)
 
     if is_feasible(rx, A, b):
