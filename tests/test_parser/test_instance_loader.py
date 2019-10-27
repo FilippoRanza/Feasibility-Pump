@@ -1,5 +1,6 @@
 #! /usr/bin/python
 
+# Copyright (c) 2019 Filippo Ranza <filipporanza@gmail.com>
 
 import unittest
 from fp_engine.fp_parser.instance_loader import get_extension
