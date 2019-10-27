@@ -46,7 +46,7 @@ class TestFeasibilityPump(unittest.TestCase):
         lp_sol = optimize.linprog(c, A, b)
         self.assertTrue(lp_sol.success)
 
-        _, stat = feasibility_pump(c, A, b)
+        _, stat = feasibility_pump(c, A, b, False)
         self.assertTrue(stat)
 
     def test_unfeasilbe_problem(self):
@@ -61,7 +61,7 @@ class TestFeasibilityPump(unittest.TestCase):
         lp_sol = optimize.linprog(c, A, b)
         self.assertTrue(lp_sol.success)
 
-        sol, stat = feasibility_pump(c, A, b)
+        sol, stat = feasibility_pump(c, A, b, False)
         self.assertFalse(stat)
         self.assertIsNone(sol)
 
