@@ -3,3 +3,6 @@
 .vscode/
 fp_engine/__pycache__/
 tests/__pycache__/
+# adding untracked files on 2019-10-27 09:37
+fp_engine/fp_binary/__pycache__/
+fp_engine/fp_parser/__pycache__/
