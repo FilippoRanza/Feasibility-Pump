@@ -38,7 +38,7 @@ def main():
         for i in fp_engine.list_parsers():
             print(i)
     else:
-        solve_instance(args.file_name)
+        solve_instance(args.instance)
 
 
 if __name__ == "__main__":

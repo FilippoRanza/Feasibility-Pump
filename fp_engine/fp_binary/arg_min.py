@@ -25,7 +25,8 @@ def build_constr(A, b):
 
 
 def base_sol(c, A, b):
-    res = optimize.linprog(c, A_ub=A, b_ub=b)
+    bounds = [(0, 1)] * len(c)
+    res = optimize.linprog(c, A_ub=A, b_ub=b, bounds=bounds)
     x = fp_round(res.x)
     return x
 
