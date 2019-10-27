@@ -34,8 +34,13 @@ Available loaders can be obtained using:
     fp.py -l
 ```
 
-Please read the documentation to get information about the correct
-format for the instance file.
+For more information about the usage you can:
+```
+    fp.py -h
+```
+
+Read this docs to get more information about the currently know file formats:
+* [json](json_file.md)
 
 ### Library
 this feature is not implemented at the current stage
