@@ -7,6 +7,7 @@ from scipy import optimize
 
 from .fp_utils import fp_round
 
+
 def fp_make_delta(int_sol):
     zeros = [i for i, j in enumerate(int_sol) if j == 0]
     ones = [i for i, j in enumerate(int_sol) if j == 1]
@@ -38,7 +39,6 @@ def arg_min(rx, constr):
         method="trust-constr",
         constraints=constr,
         bounds=optimize.Bounds(0, 1),
-        hess=lambda x: hess
+        hess=lambda x: hess,
     )
     return tmp.x
-

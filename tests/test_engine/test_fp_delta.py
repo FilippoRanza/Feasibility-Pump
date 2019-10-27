@@ -21,5 +21,6 @@ class Round(unittest.TestCase):
         delta = func(sol)
         self.assertEqual(0.95, delta)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -14,12 +14,14 @@ def need_update(x, rx):
             return True
     return False
 
+
 def update_round(sol, int_sol):
     if need_update(sol, int_sol):
         out = fp_round(sol)
     else:
         out = flip_solution(sol, int_sol)
     return out
+
 
 def feasibility_pump(c, A, b):
     rx = base_sol(c, A, b)
@@ -40,8 +42,8 @@ def feasibility_pump(c, A, b):
         if is_feasible(rx, A, b):
             out = rx, True
             break
-            
+
     else:
         out = None, False
-    
+
     return out

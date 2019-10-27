@@ -5,6 +5,7 @@ import numpy as np
 
 # Copyright (c) 2019 Filippo Ranza <filipporanza@gmail.com>
 
+
 def fp_round(x):
     tmp = map(round, x)
     return np.array(list(tmp))
