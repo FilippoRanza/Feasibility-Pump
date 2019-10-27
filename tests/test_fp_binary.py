@@ -5,7 +5,7 @@
 import unittest
 import numpy as np
 from scipy import optimize
-from fp_engine.fp_binary import need_update, update_round, feasibility_pump
+from fp_engine.fp_binary.fp_binary import need_update, update_round, feasibility_pump
 
 
 class TestUpdate(unittest.TestCase):

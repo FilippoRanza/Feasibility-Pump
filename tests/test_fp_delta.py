@@ -4,8 +4,8 @@
 
 import unittest
 import numpy as np
-from fp_engine.fp_utils import fp_round
-from fp_engine.arg_min import fp_make_delta
+from fp_engine.fp_binary.fp_utils import fp_round
+from fp_engine.fp_binary.arg_min import fp_make_delta
 
 
 class Round(unittest.TestCase):

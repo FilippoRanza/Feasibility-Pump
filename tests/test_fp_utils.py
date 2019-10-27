@@ -4,7 +4,7 @@
 
 import unittest
 import numpy as np
-from fp_engine.fp_utils import is_integer, is_feasible
+from fp_engine.fp_binary.fp_utils import is_integer, is_feasible
 
 
 class TestUtils(unittest.TestCase):
