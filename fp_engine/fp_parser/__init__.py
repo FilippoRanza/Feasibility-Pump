@@ -2,4 +2,4 @@
 
 # Copyright (c) 2019 Filippo Ranza <filipporanza@gmail.com>
 
-from .instance_loader import load_instance
+from .instance_loader import load_instance, list_parsers
