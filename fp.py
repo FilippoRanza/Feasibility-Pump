@@ -18,13 +18,14 @@ def arg_parser():
         '-l', '--list', help='list known file formats', default=False, action='store_true'
     )
 
+    parser.add_argument('--log', default=False, action='store_true', help='enable informational logging')
 
     return parser.parse_args()
 
 
-def solve_instance(file_name):
+def solve_instance(file_name, log):
     c, A, b = fp_engine.load_instance(file_name)
-    sol, stat = fp_engine.feasibility_pump(c, A, b)
+    sol, stat = fp_engine.feasibility_pump(c, A, b, log)
     if stat:
         print("Solution Found:")
         print(sol)
@@ -38,7 +39,7 @@ def main():
         for i in fp_engine.list_parsers():
             print(i)
     else:
-        solve_instance(args.instance)
+        solve_instance(args.instance, args.log)
 
 
 if __name__ == "__main__":
